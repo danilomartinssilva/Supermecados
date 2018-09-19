@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View,Platform,StatusBar } from 'react-native'
-import {TabNavigator , createTabNavigator,createBottomTabNavigator,createMaterialTopTabNavigator,createStackNavigator,createSwitchNavigator} from 'react-navigation';
+import {TabNavigator , createTabNavigator,createBottomTabNavigator,createStackNavigator,StackNavigator} from 'react-navigation';
 /* import AboutTab from './AboutTab'; */
 import LikesTab from './LikesTab';
-import {Container} from 'native-base';
+import {Container, Tab} from 'native-base';
 import TopHeader from '../components/TopHeader';
 import TopBanner from '../components/TopBanner';
 import CarTab from './CarTab';
@@ -14,6 +14,7 @@ import DetailTab from './DetailTab';
 import HomeTab from './HomeTab';
 import ListasTab from './ListasTab';
 import ReceitasTab from './ReceitasTab';
+import AddItem from '../screens/ListasTab/AddItem';
 
 export default class MainScreen extends Component {
   state= {
@@ -27,7 +28,7 @@ export default class MainScreen extends Component {
   render() {
     return (
       <Container style={{backgroundColor:"#16B76C"}}>            
-      <AppTabNavigation screenProps = {{...this.state, setProduct:this.setProduct}}/>
+      <TabBottomApplication screenProps = {{...this.state, setProduct:this.setProduct}}/>
       </Container>
     )
   }
@@ -36,7 +37,9 @@ export default class MainScreen extends Component {
 
 const styles = StyleSheet.create({})
 
-const AppTabNavigation = createBottomTabNavigator({
+
+
+const TabBottomApplication = createBottomTabNavigator({
   HomeTab:HomeTab,
   CarTab:CarTab  ,  
   ReceitasTab:ReceitasTab,
@@ -45,7 +48,7 @@ const AppTabNavigation = createBottomTabNavigator({
   LocationTab:LocationTab,  
 
 },{
-  initialRouteName:'LocationTab',
+  initialRouteName:'ListasTab',
   tabBarOptions:{
     showLabel:true,
     showIcon:true,  

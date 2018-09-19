@@ -44,12 +44,9 @@ _mapReady = () => {
 };
 
 render() {
-   console.log(this.state.initialPosition.coords);
-  //console.log(this.state);
-  /* console.log(geolib.findNearest([this.state.initialPosition.coords.latitude,this.state.initialPosition.coords.longitude], this.state.places, 1)) */
-  //console.log(geolib.findNearest(this.state.places[1], this.state.places, 1))
+  
   const { latitude, longitude } = this.state.initialPosition.coords;
-
+  
   return (
     <View style={styles.container}>
       <MapView
@@ -108,7 +105,7 @@ render() {
         { this.state.places.map(place => (
           <View key={place.id} style={styles.place}>
 
-            {/*<Text style={styles.title}>{ place.title }</Text> */}           
+            <Text style={styles.title}>Unidade - { place.title }</Text>
             {/*<Text style={styles.description}>{ place.description }</Text>*/}
             <Image source = {{uri:`${place.imagem}` }}  style={{width:null,height:100,flex:1}} />
           </View>
@@ -153,8 +150,9 @@ place: {
 
 title: {
   fontWeight: 'bold',
-  fontSize: 18,
+  fontSize: 10,
   backgroundColor: 'transparent',
+  alignSelf:'center'
 },
 
 description: {

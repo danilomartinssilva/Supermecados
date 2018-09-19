@@ -18,7 +18,7 @@ const ItemReceita = props =>{
         <Card>
   
     <CardItem cardBody>
-      <Image source={{uri: `${props.receita.image}`}} style={{height: Dimensions.get('window').height/2 , width: Dimensions.get('window').width -10, flex:1}}/>
+      <Image resizeMode="cover"  source={{uri: `${props.receita.image}`}} style={{height: Dimensions.get('window').height/2 , width: Dimensions.get('window').width -40, flex:1}}/>
     </CardItem>
     <CardItem >
       <Left>
@@ -33,8 +33,9 @@ const ItemReceita = props =>{
     </CardItem>
     <CardItem >
         <Body>
-                    
-            <Button onPress={()=> handleClick(props.receita.link)} danger style={{alignSelf:'center'}}><Text style={{alignSelf:'center',}}> Ver mais... </Text></Button>            
+                   
+            <Button  onPress={()=> handleClick(props.receita.link)} danger style={{alignSelf:'stretch',justifyContent:'center'}}><Text> Ver mais... </Text></Button>            
+
             
         </Body>
     </CardItem>    

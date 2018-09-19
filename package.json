@@ -10,6 +10,8 @@
     "fast-xml-parser": "^3.12.5",
     "geolib": "^2.0.24",
     "native-base": "^2.8.0",
+    "pouchdb-adapter-asyncstorage": "^6.4.1",
+    "pouchdb-react-native": "^6.4.1",
     "react": "16.5.0",
     "react-native": "0.57.0",
     "react-native-maps": "^0.21.0",

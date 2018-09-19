@@ -30,7 +30,8 @@ export default class ReceitasTab extends Component {
                 })
             });
             this.setState({
-              dados_receitas:dados_receitas
+              dados_receitas:dados_receitas,
+              loading:false
             })
             
         })
@@ -49,12 +50,14 @@ export default class ReceitasTab extends Component {
     
     return (
       <Container  style={{ backgroundColor:"#16B76C"}}>
-      <TopHeader title = {"Home"}/>
+      <TopHeader title = {"Receitas"}/>
         <Content>
-          {this.state.dados_receitas.map((row,index)=>            
-            <ItemReceita receita = {row} key={row.key} id = {row.key} openSite = {this.openWebSite}/>            
-
-          )}
+        
+        {this.state.dados_receitas.map((row,index)=>            
+          <ItemReceita receita = {row} key={row.key} id = {row.key} openSite = {this.openWebSite}/>            
+          
+        )}
+        <ActivityIndicator animating={this.state.loading} size={40}  color="#fff"/>
         </Content>            
       </Container>
     )

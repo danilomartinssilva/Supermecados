@@ -36,7 +36,7 @@ export default class HomeTab extends Component {
   }
   async getCapas(){
    const dados_capa =  [];
-    await fetch('http://www.grupochama.com.br/app/capas.xml?d='+Date.now())
+     fetch('http://www.grupochama.com.br/app/capas.xml?d='+Date.now())
         .then((response) => response.text())
         .then((responseText) => {
             parseString(responseText, function (err, result) {
