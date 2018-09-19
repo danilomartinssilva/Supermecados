@@ -9,8 +9,7 @@ const ItemReceita = props =>{
           props.openSite(url);
     };
     const {id} = props;    
-    const regex = /(<([^>]+)>)/ig;
-    
+    const regex = /(<([^>]+)>)/ig;   
 
 
   return(
@@ -34,7 +33,7 @@ const ItemReceita = props =>{
     </CardItem>
     <CardItem >
         <Body>
-            
+                    
             <Button onPress={()=> handleClick(props.receita.link)} danger style={{alignSelf:'center'}}><Text style={{alignSelf:'center',}}> Ver mais... </Text></Button>            
             
         </Body>

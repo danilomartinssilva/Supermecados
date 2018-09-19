@@ -7,16 +7,18 @@
     "test": "jest"
   },
   "dependencies": {
+    "fast-xml-parser": "^3.12.5",
+    "geolib": "^2.0.24",
+    "native-base": "^2.8.0",
     "react": "16.5.0",
     "react-native": "0.57.0",
-    "native-base": "^2.8.0",
+    "react-native-maps": "^0.21.0",
     "react-native-swiper": "^1.5.13",
     "react-native-vector-icons": "^5.0.0",
     "react-native-xml2js": "^1.0.3",
     "react-navigation": "^2.12.1",
-    "x2js": "^3.2.1",
-    "xml-js": "^1.6.7",
-    "xml2js": "^0.4.19"
+    "react-xml-parser": "^1.0.8",
+    "xml2js-es6-promise": "^1.1.1"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",

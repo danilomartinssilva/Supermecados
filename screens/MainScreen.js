@@ -42,11 +42,10 @@ const AppTabNavigation = createBottomTabNavigator({
   ReceitasTab:ReceitasTab,
   /* OrderTab:OrderTab, */
   ListasTab:ListasTab,
-  LocationTab:LocationTab,
-  
+  LocationTab:LocationTab,  
 
 },{
-  initialRouteName:'ReceitasTab',
+  initialRouteName:'LocationTab',
   tabBarOptions:{
     showLabel:true,
     showIcon:true,  
