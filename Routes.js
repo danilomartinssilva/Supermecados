@@ -9,8 +9,11 @@ import DetailTab from './screens/DetailTab';
 import HomeTab from './screens/HomeTab';
 
 import ListasTab from './screens/ListasTab';
-import ReceitasTab from './screens/ReceitasTab';
 import AddItem from './screens/ListasTab/AddItem';
+import ReceitasTab from './screens/ReceitasTab';
+//import AddItem from './screens/ListasTab/AddItem';
+
+
 import LocationTab from './screens/LocationTab';
 
 /*
@@ -49,7 +52,7 @@ const Tabs = createBottomTabNavigator({
   },
 });
 
-const stackPages= createStackNavigator({
+ const stackPages= createStackNavigator({
   AddItemLista: {
     screen:AddItem,
     navigationOptions: () => ({
@@ -60,10 +63,10 @@ const stackPages= createStackNavigator({
   },
 
 
-});
+}); 
 
 
 export default createSwitchNavigator({
-  TabApplication:Tabs,
-  Stack:stackPages,
+  TabApplication:Tabs  ,
+  PageStack:stackPages
 })

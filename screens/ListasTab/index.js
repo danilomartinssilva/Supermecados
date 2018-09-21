@@ -4,12 +4,13 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Container, Header, Content, Form, Item, Input, Button, List, ListItem, Right, Body ,Icon, Left} from 'native-base';
 import TopHeader from '../../components/TopHeader' ;
+import ItensOfList from './ItensOfList'
 import PouchDB from 'pouchdb-react-native';
 PouchDB.plugin(require('pouchdb-adapter-asyncstorage').default)
 const db = new PouchDB('mydb', {adapter: 'asyncstorage'})
 
 
-import AddItem from './AddItem';
+
 
 // use PouchDB
 
@@ -94,6 +95,7 @@ export default class ListasTab extends Component {
     })
   }
   onModalOpenHandler = () =>{
+    
     this.setState({
       modalVisible:true
     })
@@ -118,6 +120,7 @@ export default class ListasTab extends Component {
   }
   onSelectecValue = (key) =>{
     
+      
 
 
   }
@@ -127,13 +130,15 @@ export default class ListasTab extends Component {
     
     return (
       <Container>   
-      <AddItem  
-        
-        onParentId = {this.state.parentId}
-        onModalVisibleStatus = {this.state.modalVisible}
-        onModalClosed = {()=>this.onModalCloseHandler()}
-      />
+      <ItensOfList
+         modalCloseHandler = {()=>this.onModalCloseHandler()} 
+         OnmodalVisible = {this.state.modalVisible} 
+         onParentId = {this.state.parentId} 
+      />      
+      
+     
       <TopHeader title= {"Lista de Compras"}/>
+      
       <Content>
         <Form>
           <Item>
