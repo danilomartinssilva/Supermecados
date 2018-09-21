@@ -11,6 +11,7 @@ export default class ReceitasTab extends Component {
   static navigationOptions = {
     title: "Receitas",
     tabBarIcon:<MaterialIcons name="restaurant" style={{color:'#fff'}}  size={24} />,
+    
   }
   state = {
     dados_receitas : [],

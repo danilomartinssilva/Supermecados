@@ -4,16 +4,18 @@ import { StyleSheet, View,Dimensions,ActivityIndicator,Image , TouchableOpacity 
 import { Container,Content, Card, CardItem,  Text, Button,  Left, Body, Right } from 'native-base';
 
 
+
 const ItemReceita = props =>{
-    handleClick = url => {
-          props.openSite(url);
-    };
-    const {id} = props;    
-    const regex = /(<([^>]+)>)/ig;   
-
-
+  handleClick = url => {
+    props.openSite(url);
+  };
+  const {id} = props;    
+  const regex = /(<([^>]+)>)/ig;   
+  
+  
+  
   return(
-
+    
 
         <Card>
   

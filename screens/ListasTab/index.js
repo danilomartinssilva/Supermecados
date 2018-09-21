@@ -1,15 +1,12 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View , AsyncStorage,ToastAndroid,ActivityIndicator,TouchableOpacity} from 'react-native'
+import { Text, StyleSheet, View , AsyncStorage,ToastAndroid,ActivityIndicator,TouchableOpacity,Modal,TouchableHighlight} from 'react-native'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-
 import { Container, Header, Content, Form, Item, Input, Button, List, ListItem, Right, Body ,Icon, Left} from 'native-base';
 import TopHeader from '../../components/TopHeader' ;
-
 import PouchDB from 'pouchdb-react-native';
 PouchDB.plugin(require('pouchdb-adapter-asyncstorage').default)
 const db = new PouchDB('mydb', {adapter: 'asyncstorage'})
-
 
 
 import AddItem from './AddItem';
@@ -18,24 +15,59 @@ import AddItem from './AddItem';
 
 const localDB = new PouchDB('listaChamaSupermecados');
 
-console.log(localDB.adapter);
 
 
 export default class ListasTab extends Component {
 
+  constructor(props){
+    super(props);
+  }
+
   state = {
     descricaoLista:'',
     listas:[],
-    loading_Lista:true
+    parentId:'',
+    loading_Lista:true,
+    modalVisible:false,    
+    _idAdd:'',
+    itensListas:[]
   }  
   componentDidMount(){
     this.getListas();
+    
+
   }
+  getItensLista= (parentId) =>{
+    
+    
+   /*  const itensListas = [];
+    itensListasDb.allDocs({itensListaChamaSupermecados: true, limit: null})
+    .then(result => {      
+      result.rows.forEach((row)=>{
+        
+        if(row.doc.parentId===parentId){
+          console.log("AQUI",row.doc.parentId===parentId);
+          
+           itensListas.push(row);
+        }
+      })  
+      this.setState({
+        itensListas:itensListas,
+        modalVisible:true
+      })
+    })
+    .catch(error => console.warn('Could not load Documents', error, error.message))    
+     */
+
+  }
+
+
   getListas =() =>{
     const listas = [];
     localDB.allDocs({include_docs:true,limit:9})
     .then((result)=>{
       result.rows.forEach((r)=>{
+        
         listas.push(r);
       })      
       
@@ -55,9 +87,16 @@ export default class ListasTab extends Component {
     tabBarIcon:<MaterialIcons name="list" style={{color:'#fff'}}  size={24} />,
   }
   onDeleteList=({id,_rev})=>{
-    console.log(_rev);
-
-      /* db.remove(id); */
+  }
+  onModalCloseHandler = () =>{
+    this.setState({
+      modalVisible:false
+    })
+  }
+  onModalOpenHandler = () =>{
+    this.setState({
+      modalVisible:true
+    })
   }
   onSaveTitle= ()=>{
     if(this.state.descricaoLista.length>0)  {
@@ -77,12 +116,23 @@ export default class ListasTab extends Component {
     }
 
   }
+  onSelectecValue = (key) =>{
+    
 
-  render() {     
-    const {navigate} = this.props.navigation;
+
+  }
+ 
+  render() {         
+    
     
     return (
-      <Container>
+      <Container>   
+      <AddItem  
+        
+        onParentId = {this.state.parentId}
+        onModalVisibleStatus = {this.state.modalVisible}
+        onModalClosed = {()=>this.onModalCloseHandler()}
+      />
       <TopHeader title= {"Lista de Compras"}/>
       <Content>
         <Form>
@@ -97,27 +147,22 @@ export default class ListasTab extends Component {
         </Button>
         <ActivityIndicator animating = {this.state.loading_Lista}/>
         <List>
-        { this.state.listas.map((result)=>(
-           console.log(result),
+           { this.state.listas.map((result)=>(
+           
           <ListItem icon key = {result.key} id={result.key}  >
-          <Left>
-            <MaterialIcons   name="list" style={{color:'green'}}  size={24} />              
-          </Left>
+            <Left>
+              <MaterialIcons   name="list" style={{color:'green'}}  size={24} />              
+            </Left>
             
             <Body>
-              <TouchableOpacity  onPress={() => navigate('Profile', { name: 'Brent' })}>
+              <TouchableOpacity onPress = {()=>this.setState({parentId:result.id,modalVisible:true})}>              
                 <Text>{result.doc.descricao}</Text>
               </TouchableOpacity>
             </Body>           
             
-            <Right>              
-                <TouchableOpacity onPress={()=>this.onDeleteList(result,result.doc._rev)}>      
-
-                <MaterialIcons   name="delete" style={{color:'red'}}  size={24} />              
-                </TouchableOpacity>
+            <Right>                              
+                <MaterialIcons   name="delete" style={{color:'red'}}  size={24} />    
             </Right>
-            
-           
           </ListItem>
         
         ))}
