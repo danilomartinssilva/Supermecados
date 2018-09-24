@@ -12,6 +12,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
 const { width } = Dimensions.get('window')
 import TopHeader from '../../components/TopHeader';
 const parseString = require('react-native-xml2js').parseString;
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const styles = {
   container: {
@@ -34,19 +35,7 @@ const styles = {
     backgroundColor: '#9DD6EB'
   },
 
-  slide2: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#97CAE5'
-  },
 
-  slide3: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#92BBD9'
-  },
 
   text: {
     color: '#fff',
@@ -66,6 +55,11 @@ export default class OfersTab extends Component {
     dadosTabloid:[],
     modalVisible:false,
     imageSelected:''
+  }
+  static navigationOptions = {
+    tabBarIcon:<MaterialIcons name="attach-money" style={{color:'#fff'}}  size={24} />,    
+    title:'Ofertas' ,
+    
   }
   
    getTabloid= ()=>{
@@ -93,6 +87,19 @@ export default class OfersTab extends Component {
   componentDidMount(){
     this.getTabloid();
   }
+  onDoublePress = (item) => {
+    const time = new Date().getTime();
+    const delta = time - this.lastPress;
+
+    const DOUBLE_PRESS_DELAY = 400;
+    if (delta < DOUBLE_PRESS_DELAY) {
+      this.setState({
+        imageSelected:item,
+        modalVisible:true
+      })
+    }
+    this.lastPress = time;
+    };
   render () {
     const ModalImage = () =>(
       <Modal
@@ -119,22 +126,23 @@ export default class OfersTab extends Component {
       return row.imagem_big;
     })
     return (
-      <View style={styles.container}>
-    
-        <ModalImage 
-         
+      <View style={styles.container}>    
+        <ModalImage          
         />
-
+        {this.state.dadosTabloid.length>0
+        &&
         <Swiper style={styles.wrapper} height={240}
 
           
           onMomentumScrollEnd={(e, state, context) => console.log('index:', state.index)}
-          dot={<View style={{backgroundColor: 'rgba(0,0,0,.2)',  width: 10, height: 10,  borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3}} />}
+          activeDot ={<View style={{backgroundColor: '#007aff', width: 20, height: 20, borderRadius: 10, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />}
+          dot={<View style={{backgroundColor: 'rgba(0,0,0,.2)', width: 20, height: 20, borderRadius: 10, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3}} />}
+
           
            loop>
            {urlsImages.map((item,index)=>(             
              
-             <TouchableWithoutFeedback  style = {{flex:1}} key = {index} onLongPress= {()=> this.setState({imageSelected:item,modalVisible:true})}>
+             <TouchableWithoutFeedback  style = {{flex:1}} key = {index} onPress= {()=> this.onDoublePress(item)}>
 
              <View  style={styles.slide}   title={<Text numberOfLines={1}>Aussie tourist dies at Bali hotel</Text>}>
                <Image  resizeMode='stretch' style={styles.image} source={{uri:`${item}`}} />
@@ -142,10 +150,10 @@ export default class OfersTab extends Component {
             </TouchableWithoutFeedback>
 
            ))}
-          
-          
-          
         </Swiper>
+        } 
+
+        
       </View>
     )
   }

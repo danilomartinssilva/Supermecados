@@ -25,19 +25,20 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       backgroundColor: '#9DD6EB'
     },
-  
-    slide2: {
-      flex: 1,
+    loadingView: {
+      position: 'absolute',
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#97CAE5'
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0,
+      backgroundColor: 'rgba(0,0,0,.5)'
     },
   
-    slide3: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#92BBD9'
+    loadingImage: {
+      width: 60,
+      height: 60
     },
   
     text: {
@@ -69,15 +70,17 @@ const Slider = ({capas}) =>{
     <View style={styles.container}>    
 
 
-    <Swiper style={styles.wrapper} height={240}
-
+    <Swiper style={styles.wrapper} height={240}     
+      
+      activeDot ={<View style={{backgroundColor: '#007aff', width: 20, height: 20, borderRadius: 10, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />}
+      dot={<View style={{backgroundColor: 'rgba(0,0,0,.2)', width: 20, height: 20, borderRadius: 10, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3}} />}
       scrollEnabled = {true}
       onMomentumScrollEnd={(e, state, context) => console.log('index:', state.index)}
-      dot={<View style={{backgroundColor: 'rgba(0,0,0,.2)', width: 10, height: 10, borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3}} />}
       
        loop>
        {imagesVet.map((item,index)=>(             
-         <View key={index} style={styles.slide} title={<Text numberOfLines={1}>Aussie tourist dies at Bali hotel</Text>}>
+         <View key={index} style={styles.slide} >
+         
            <Image  resizeMode='stretch' style={styles.image} source={{uri:`${item}`}} />
          </View>
        ))}

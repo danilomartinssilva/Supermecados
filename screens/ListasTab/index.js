@@ -10,8 +10,6 @@ PouchDB.plugin(require('pouchdb-adapter-asyncstorage').default)
 const db = new PouchDB('mydb', {adapter: 'asyncstorage'})
 
 
-
-
 // use PouchDB
 
 const localDB = new PouchDB('listaChamaSupermecados');
@@ -23,6 +21,7 @@ export default class ListasTab extends Component {
   constructor(props){
     super(props);
   }
+  
 
   state = {
     descricaoLista:'',
@@ -38,29 +37,7 @@ export default class ListasTab extends Component {
     
 
   }
-  getItensLista= (parentId) =>{
-    
-    
-   /*  const itensListas = [];
-    itensListasDb.allDocs({itensListaChamaSupermecados: true, limit: null})
-    .then(result => {      
-      result.rows.forEach((row)=>{
-        
-        if(row.doc.parentId===parentId){
-          console.log("AQUI",row.doc.parentId===parentId);
-          
-           itensListas.push(row);
-        }
-      })  
-      this.setState({
-        itensListas:itensListas,
-        modalVisible:true
-      })
-    })
-    .catch(error => console.warn('Could not load Documents', error, error.message))    
-     */
 
-  }
 
 
   getListas =() =>{
@@ -87,7 +64,12 @@ export default class ListasTab extends Component {
     title: "Listas",
     tabBarIcon:<MaterialIcons name="list" style={{color:'#fff'}}  size={24} />,
   }
-  onDeleteList=({id,_rev})=>{
+  onDeleteList=(key)=>{
+    localDB.get(key).then((doc)=>{
+      localDB.remove(doc)
+    }).then((res)=>{
+      this.getListas();
+    })
   }
   onModalCloseHandler = () =>{
     this.setState({
@@ -120,10 +102,8 @@ export default class ListasTab extends Component {
   }
   onSelectecValue = (key) =>{
     
-      
-
-
   }
+
  
   render() {         
     
@@ -142,13 +122,13 @@ export default class ListasTab extends Component {
       <Content>
         <Form>
           <Item>
-            <Input placeholder="Descrição" id = "descricao_lista" onChangeText={(text) => this.setState({descricaoLista: text})} value = {this.state.descricaoLista}/>   
+            <Input placeholder="Nome da Lista que deseja criar"  id = "descricao_lista" onChangeText={(text) => this.setState({descricaoLista: text})} value = {this.state.descricaoLista}/>   
           </Item>          
         </Form>
         
         <Button iconLeft block primary onPress={this.onSaveTitle}>
           <MaterialIcons name="add" size={30} color="#fff" />
-          <Text  style = {{color:'#fff'}}>Adicionar</Text>
+          <Text  style = {{color:'#fff'}}>Criar Lista</Text>
         </Button>
         <ActivityIndicator animating = {this.state.loading_Lista}/>
         <List>
@@ -166,7 +146,7 @@ export default class ListasTab extends Component {
             </Body>           
             
             <Right>                              
-                <MaterialIcons   name="delete" style={{color:'red'}}  size={24} />    
+                <MaterialIcons   name="delete" style={{color:'red'}} onPress={()=>this.onDeleteList(result.doc._id)} size={24} />    
             </Right>
           </ListItem>
         

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View,Modal, TouchableHighlight} from 'react-native'
-import { Container, Header, Content, List, ListItem, Button ,Form,Item,Input,Card,CardItem,Right} from 'native-base'; 
+import { Container, Header, Content, List, ListItem, Button ,Form,Item,Input,Card,CardItem,Right,CheckBox, Left,Icon, Body} from 'native-base'; 
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import TopHeader from '../../../components/TopHeader'
 import PouchDB from 'pouchdb-react-native';
 import _ from 'lodash';
@@ -22,8 +23,7 @@ export default class index extends Component {
       
     }
  
-    componentDidMount(){
-      
+    componentDidMount(){      
     this.getItensLista();
     
     }
@@ -47,6 +47,17 @@ export default class index extends Component {
             console.log(err);
           })
     }
+    changeCheckedElement = (key,check,rev) =>{
+
+      localDB.get(key).then((doc)=>{
+        doc.checkIten = check;
+        return localDB.put(doc);
+      }).then((res)=>{
+          this.getItensLista();
+      })
+
+    }
+
 
     handlerModalAddClose = () =>{
       this.setState({
@@ -60,7 +71,8 @@ export default class index extends Component {
         'descricao':this.state.descricao,
         'valor':this.state.valor,
         'quantidade':this.state.quantidade,
-        'parentId':this.props.onParentId
+        'parentId':this.props.onParentId,
+        'checkIten':false
       }
       
       console.log("DATA",data);
@@ -76,9 +88,25 @@ export default class index extends Component {
     
     }
     onSumValorTotal = () =>{
-     return 10.99;
 
+      const total = this.state.itens_lista.filter((r)=>{
+        return r.doc.parentId===this.props.onParentId
+      });
+      
+      let sum = 0;
+      total.forEach((row)=>{
+        sum += parseInt(new String(row.doc.valor).replace(',','.')) * parseInt(new String(row.doc.quantidade).replace(',','.'));
+      });
+      
+      return sum.toFixed(2).replace('.',',');
 
+    }
+    deleteItenList = (key) =>{
+      localDB.get(key).then((doc)=>{        
+        return localDB.remove(doc);
+      }).then((res)=>{
+          this.getItensLista();
+      })
     }
 
   render() {
@@ -108,27 +136,38 @@ export default class index extends Component {
           <Content>
           <Form>
             <Item>
-            <Input placeholder="Descricao" onChangeText ={(text)=>this.setState({descricao:text})} />
+            <Input placeholder="Exemplo (Arroz Camil)" onChangeText ={(text)=>this.setState({descricao:text})} />
             </Item>
             <Item>
-              <Input placeholder="Quantidae" onChangeText ={(text)=>this.setState({quantidade:text})} />
+              <Input placeholder="Exemplo (2)" onChangeText ={(text)=>this.setState({quantidade:text})} />
             </Item>
             <Item last>
-            <Input placeholder="Valor" onChangeText ={(text)=>this.setState({valor:text})} />
+            <Input placeholder="RS 9,99" onChangeText ={(text)=>this.setState({valor:text})} />
             </Item>
             
           </Form>
           
           <Button 
           block onPress={()=>this.onSaveAdd()} success style = {{marginTop:20,marginBottom:20}}>
-              <Text>Adicionar Item</Text>
+              <Text style={{color:"#fff", fontWeight:'bold'}}>Adicionar Item</Text>
           </Button>
             <List>
             {this.state.itens_lista.filter((row)=>row.doc.parentId===this.props.onParentId).map((r,index)=>{
               return(
               <ListItem key={index}>
-              
-                <Text>{r.doc.descricao}</Text>
+                <Left  >
+                {r.doc.checkIten===false ? (<MaterialIcons  name="check-box-outline-blank" size ={30} color="green" onPress = {()=>this.changeCheckedElement(r.doc._id,true,r.doc._rev)} />) :
+                 (<MaterialIcons  name="check-box" size ={30} color="green" onPress = {()=>this.changeCheckedElement(r.doc._id,false)} />)
+                }
+                <Text style={{marginLeft:10}}>{r.doc.descricao}</Text>
+                
+                </Left>
+                <Body>
+                
+                </Body>
+                <Right>
+                <MaterialIcons  name="delete" size ={30} color="red" onPress = {()=>this.deleteItenList(r.doc._id)} />
+                </Right>
               </ListItem>
               )
 

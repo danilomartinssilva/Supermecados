@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-const styles = StyleSheet.create({
+const styles1 = StyleSheet.create({
     container:{
         backgroundColor:"#EB1B24"  ,
         height:110

@@ -10,7 +10,11 @@ const parseString = require('react-native-xml2js').parseString;
 import {listAll} from '../../store/api_capa';
 
 
+
+
+const loading = require('../../../Chama Supermecados/assets/loading.gif');
 export default class HomeTab extends Component {
+
   state = {
     capas:[],
     posts_face:[],
@@ -64,6 +68,10 @@ export default class HomeTab extends Component {
     this.getCapas();
     this.getFacebook()
   }
+  mesesAno = (index)=>{
+    const meses = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+    return meses[index];
+  }
   getFacebook = async () =>{
     const posts_face = [];
     await fetch('http://grupochama.com.br/app/facebook.php?d='+Date.now())
@@ -82,9 +90,11 @@ export default class HomeTab extends Component {
             .catch((err)=>{
               console.log(err);
             })
+            
             this.setState({
               posts_face,
-              refreshing:false
+              refreshing:false,
+              loading_posts:false
             })
 
   }
@@ -92,8 +102,8 @@ export default class HomeTab extends Component {
   componentDidMount(){
     this.getCapas() ; 
     this.getFacebook();
-
    }
+   
     
     static navigationOptions = {
         title: "Home",
@@ -110,26 +120,39 @@ export default class HomeTab extends Component {
           <RefreshControl refreshing = {this.state.refreshing}
           onRefresh= {this._onRefresh}/>   } >
           <Card >
-          <ActivityIndicator animating={this.state.loading_capa} size={40} style={{position:'absolute',zIndex:100 ,top:Dimensions.get('window').height/2 -100,left:Dimensions.get('window').width/2 -20}} />
+          
           <CardItem bordered>
           <Left>
           <Thumbnail source={require('../../assets/logo_chama.png')} />
           <Body>
           <Text>Chama Supermecados</Text>
-          <Text note> 12 de setembro de 2018</Text>
+          <Text note> {new Date().getDate()} de {this.mesesAno(new Date().getMonth())} de {new Date().getFullYear()}</Text>
           </Body>
           </Left>
           </CardItem>          
             <CardItem cardBody style ={{marginTop:10}} >            
               {/*SWIPPER*/}
+              {this.state.capas.length > 0 
+               ?
               <Slider capas = {this.state.capas}/>              
+              : 
+              <View style={styles.loadingView}>
+                <Image style={styles.loadingImage} source={loading} />
+              </View>
+              }
             </CardItem>            
           </Card>
-          {this.state.posts_face.map((row,index)=>(
-
-          <CardsFacebook key = {index} posts_face = {row}  openWebSite = {this.openWebSite}/>
-
-          ))}
+          {this.state.posts_face.length>0 ?
+          
+            this.state.posts_face.map((row,index)=>(              
+  
+            <CardsFacebook key = {index} posts_face = {row}  openWebSite = {this.openWebSite}/>
+  
+            )) :
+          <View style={styles.loadingView}>
+                <Image style={styles.loadingImage} source={loading} />
+           </View>
+          }
         </Content>            
       </Container>
 
