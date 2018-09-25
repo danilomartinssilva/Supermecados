@@ -1,12 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hello">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.appchamasupermecados">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove" />
     <application
-      android:name=".MainApplication"
+      android:name="com.appchamasupermecados.MainApplication"
       android:label="@string/app_name"
       android:icon="@drawable/icon"
       android:allowBackup="false"
@@ -15,7 +18,7 @@
         android:name="com.google.android.geo.API_KEY"
         android:value="AIzaSyCQmfV6dzNRwYtyeosEEY-Ku9jKCTL840c"/>
       <activity
-        android:name=".MainActivity"
+        android:name="com.appchamasupermecados.MainActivity"
         android:label="@string/app_name"
         android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
         android:windowSoftInputMode="adjustResize">
