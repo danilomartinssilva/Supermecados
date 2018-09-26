@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View,Modal, TouchableHighlight} from 'react-native'
+import { Text, StyleSheet, View,Modal, TouchableHighlight,ToastAndroid} from 'react-native'
 import { Container, Header, Content, List, ListItem, Button ,Form,Item,Input,Card,CardItem,Right,CheckBox, Left,Icon, Body} from 'native-base'; 
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import TopHeader from '../../../components/TopHeader'
@@ -75,15 +75,27 @@ export default class index extends Component {
         'checkIten':false
       }
       
-      console.log("DATA",data);
-      localDB.post(data).then(function (response) {  
-        console.log(response);
-          
+      if(this.state.descricao.length>0 && this.state.quantidade.length>0 && this.state.valor.length>0){
+      
+          localDB.post(data).then(function (response) {           
+            ToastAndroid.showWithGravity(
+              'Adicionado a lista!',
+              ToastAndroid.SHORT,
+              ToastAndroid.CENTER
+            );    
 
-      }).catch(function (err) {
-          console.log(err);
-      });
-      this.getItensLista();
+          }).catch(function (err) {
+              console.log(err);
+          });
+          this.getItensLista();
+    }
+    else{
+      ToastAndroid.showWithGravity(
+        'Você precisa preencher os campos!',
+        ToastAndroid.SHORT,
+        ToastAndroid.CENTER
+      );
+    }
   
     
     }
@@ -95,7 +107,7 @@ export default class index extends Component {
       
       let sum = 0;
       total.forEach((row)=>{
-        sum += parseInt(new String(row.doc.valor).replace(',','.')) * parseInt(new String(row.doc.quantidade).replace(',','.'));
+        sum += parseFloat(new String(row.doc.valor).replace(',','.')) * parseFloat(new String(row.doc.quantidade).replace(',','.'));
       });
       
       return sum.toFixed(2).replace('.',',');
@@ -130,19 +142,19 @@ export default class index extends Component {
 
           <Card>
             <CardItem>              
-              <Text>Valor Total: {this.onSumValorTotal()} </Text>           
+              <Text style = {{fontSize:20,fontWeight:'bold'}}>Valor Total: {this.onSumValorTotal()} </Text>           
              </CardItem>
            </Card>
           <Content>
           <Form>
-            <Item>
-            <Input placeholder="Exemplo (Arroz Camil)" onChangeText ={(text)=>this.setState({descricao:text})} />
+            <Item regular style={{marginTop:10,paddingLeft:10}}>
+            <Input placeholderTextColor="#808080" placeholder="Produto" onChangeText ={(text)=>this.setState({descricao:text})} />
             </Item>
-            <Item>
-              <Input placeholder="Exemplo (2)" onChangeText ={(text)=>this.setState({quantidade:text})} />
+            <Item regular style={{marginTop:10,paddingLeft:10}}>
+              <Input placeholderTextColor="#808080" placeholder="Qtd" onChangeText ={(text)=>this.setState({quantidade:text})} />
             </Item>
-            <Item last>
-            <Input placeholder="RS 9,99" onChangeText ={(text)=>this.setState({valor:text})} />
+            <Item regular style={{marginTop:10,paddingLeft:10}}>
+            <Input placeholderTextColor="#808080" placeholder="RS 9,99" onChangeText ={(text)=>this.setState({valor:text})} />
             </Item>
             
           </Form>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, View, Text, StyleSheet, Dimensions ,Image} from 'react-native';
+import { ScrollView, View, Text, StyleSheet, Dimensions ,Image,Platform,PermissionsAndroid} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 import MapView from 'react-native-maps';
@@ -29,17 +29,52 @@ export default class LocationTab extends Component {
   getMarks = () =>{
   
   }
-  componentDidMount(){
-    navigator.geolocation.getCurrentPosition(
-      (initialPosition) => {        
+  requestPermission = () =>{
+    if(Platform.OS==='ios') return Promise.resolve(true);
+    return PermissionsAndroid.request(
+      PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,{
+        'title':'Buscando informação sobre permissão',
+        'message':'Informação sobre permissão'
+      }).then((granted)=>{
+        if(granted===PermissionsAndroid.RESULTS.GRANTED || granted===true){
+          return Promise.resolve("Informação de localização permitida");
+        }
+        else{
+          return Promise.reject|("Informação de localização não permitida");
+        }
+      })
+
+  }
+  async componentDidMount(){
+  /* await  navigator.geolocation.getCurrentPosition(
+      (initialPosition) => {  
+        console.log("Posicao inicial",initialPosition) ;     
         this.setState({places:places(initialPosition.coords.latitude,initialPosition.coords.longitude)})
       },
       (error) => {
         
       },
-      {enableHighAccuracy: true, timeout: 25000, maximumAge: 3600000 }
-    )
+      {enableHighAccuracy: true, timeout: 10000}
+      
+    ) */
+   this.getCoordinates().then((res)=>{
+     this.setState({
+       places:places(res.coords.latitude,res.coords.longitude)
+     })
+   }).catch((err)=>{
+     console.log(err);
+   })
   
+  }
+  getCoordinates = ()=>{
+    return this.requestPermission().then(ok=>{
+      return new Promise((resolve,reject)=>{
+
+        const options = Platform.OS==='android'  ? {enableHighAccuracy: true, timeout: 10000,maximumAge:0}
+                                                : {enableHighAccuracy: true, timeout: 10000,maximumAge:0};
+                                                global.navigator.geolocation.getCurrentPosition(resolve, reject, options);
+      })
+    })
   }
 
   _mapReady = () => {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View , AsyncStorage,ToastAndroid,ActivityIndicator,TouchableOpacity,Modal,TouchableHighlight} from 'react-native'
+import { Text, StyleSheet, View , AsyncStorage,ToastAndroid,ActivityIndicator,TouchableOpacity,Modal,TouchableHighlight,Dimensions} from 'react-native'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Container, Header, Content, Form, Item, Input, Button, List, ListItem, Right, Body ,Icon, Left} from 'native-base';
@@ -83,7 +83,7 @@ export default class ListasTab extends Component {
     })
   }
   onSaveTitle= ()=>{
-    if(this.state.descricaoLista.length>0)  {
+    if(this.state.descricaoLista.length>0 )  {
 
      localDB.post((({descricao:this.state.descricaoLista.toLocaleUpperCase()})))
     .then(resultado=>{
@@ -97,6 +97,13 @@ export default class ListasTab extends Component {
 
       })
     .catch((err)=>console.log(err))  
+    }
+    else{
+      ToastAndroid.showWithGravity(
+        'Você precisa digitar um nome para a lista!',
+        ToastAndroid.SHORT,
+        ToastAndroid.CENTER
+      );
     }
 
   }
@@ -121,9 +128,13 @@ export default class ListasTab extends Component {
       
       <Content>
         <Form>
-          <Item>
-            <Input placeholder="Nome da Lista que deseja criar"  id = "descricao_lista" onChangeText={(text) => this.setState({descricaoLista: text})} value = {this.state.descricaoLista}/>   
-          </Item>          
+        <Item regular style={{marginTop:10}}>
+        <Input  placeholderTextColor="#808080" selectTextOnFocus placeholder="Digite aqui o nome da sua lista"  id = "descricao_lista" onChangeText={(text) => this.setState({descricaoLista: text})} value = {this.state.descricaoLista}/>   
+        </Item>          
+        <Item>
+          <Text style={{fontSize:12,marginBottom:10,color:'red'}}>Aqui você não precisa de caneta e papel basta fazer sua lista e fazer sua compra sem esqueer de nada. </Text>
+        </Item>
+
         </Form>
         
         <Button iconLeft block primary onPress={this.onSaveTitle}>
