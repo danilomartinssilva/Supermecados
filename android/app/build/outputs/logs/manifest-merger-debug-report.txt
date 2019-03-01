@@ -1,0 +1,263 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:1:1-34:12
+MERGED from [:react-native-vector-icons] E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\6001acec48e9430e7f43fdafeed831f4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.react:react-native:0.57.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\react-native-0.57.0.aar\6af838b26a56a1b3d975a2a4bbf01ad0\AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\ee1dae3791697d1b73d9f62009b49aa4\AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-maps] E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\node_modules\react-native-maps\lib\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\340a745ad65bf66d5d3467f920e4fb99\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\ca991d35f9e361b35053db727295f501\AndroidManifest.xml:17:1-29:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\a67947fc75f29e510d49a871857155e8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\f948a39efd7d190f0f25c31492c5d33e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\f8f57f71f20d045491d9e1be3d1c077b\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\5308142783a69394252dcc796f5aec40\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\90925e7b2caa82d5cae847f4651a8114\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\cd3aa5e9e5333f38290db5b599d37760\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\1558d76b5ae72c6f9287341f77a465f0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\e897def423c11375628d85096b7f9080\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\d82939ef291e920122edca0e57fd4bb4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\e20a60de52257e2730a4323c62dfd90a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\61e592dda3bb9a9b0f3fe55014513276\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\d9f52b8d99fb470a2173654893031c03\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\69f4cb8bf9516c4310f71311363df51e\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\02b900717ab37a9531238e30142a8a1e\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\95fd36ed610d0e843952803b9cda44d4\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\a955b383e6188a04dd9a5833949e99ce\AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\30739da048be5dd50adca9186ce56bf4\AndroidManifest.xml:1:1-3:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ba9a1c1b7b0bf63c5919e7ad493f872b\AndroidManifest.xml:2:1-13:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2eeaf3194842f14d6b55686dda1011d1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6380223c6f0238757dbde139c18b30e0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\c136592f9d205218ce0e764564619c4d\AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cb25b211fd36d2047e18fae84d6b380f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a5c183df52f45373f7ba55536c8815c6\AndroidManifest.xml:17:1-22:12
+INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:1:1-34:12
+	package
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:3:5-39
+		INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:1:1-34:12
+		INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:2:5-51
+	android:versionCode
+		INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:1:1-34:12
+		INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-feature#android.hardware.location.gps
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:4:6-67
+	android:name
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:4:20-64
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:5:7-83
+MERGED from [:react-native-maps] E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\node_modules\react-native-maps\lib\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:10:5-81
+MERGED from [:react-native-maps] E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\node_modules\react-native-maps\lib\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:5:24-80
+uses-permission#android.permission.INTERNET
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [:react-native-maps] E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\node_modules\react-native-maps\lib\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:9:5-67
+MERGED from [:react-native-maps] E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\node_modules\react-native-maps\lib\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\340a745ad65bf66d5d3467f920e4fb99\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\340a745ad65bf66d5d3467f920e4fb99\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:7:5-77
+MERGED from [com.facebook.react:react-native:0.57.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\react-native-0.57.0.aar\6af838b26a56a1b3d975a2a4bbf01ad0\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\react-native-0.57.0.aar\6af838b26a56a1b3d975a2a4bbf01ad0\AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:7:22-75
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:8:6-80
+	android:name
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:8:23-77
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:9:5-11:31
+	tools:node
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:11:9-28
+	android:name
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:10:9-59
+application
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:12:5-32:19
+MERGED from [com.facebook.react:react-native:0.57.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\react-native-0.57.0.aar\6af838b26a56a1b3d975a2a4bbf01ad0\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.57.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\react-native-0.57.0.aar\6af838b26a56a1b3d975a2a4bbf01ad0\AndroidManifest.xml:13:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\340a745ad65bf66d5d3467f920e4fb99\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\340a745ad65bf66d5d3467f920e4fb99\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\ca991d35f9e361b35053db727295f501\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\ca991d35f9e361b35053db727295f501\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\f8f57f71f20d045491d9e1be3d1c077b\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\f8f57f71f20d045491d9e1be3d1c077b\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\5308142783a69394252dcc796f5aec40\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\5308142783a69394252dcc796f5aec40\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\90925e7b2caa82d5cae847f4651a8114\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\90925e7b2caa82d5cae847f4651a8114\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\cd3aa5e9e5333f38290db5b599d37760\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\cd3aa5e9e5333f38290db5b599d37760\AndroidManifest.xml:25:5-29:19
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\a955b383e6188a04dd9a5833949e99ce\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\a955b383e6188a04dd9a5833949e99ce\AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\30739da048be5dd50adca9186ce56bf4\AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\30739da048be5dd50adca9186ce56bf4\AndroidManifest.xml:2:3-17
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ba9a1c1b7b0bf63c5919e7ad493f872b\AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ba9a1c1b7b0bf63c5919e7ad493f872b\AndroidManifest.xml:7:5-11:19
+	android:label
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:14:7-39
+	android:icon
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:15:7-36
+	android:allowBackup
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:16:7-34
+	android:theme
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:17:7-38
+	android:name
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:13:7-62
+meta-data#com.google.android.geo.API_KEY
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:18:8-20:66
+	android:value
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:20:9-64
+	android:name
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:19:9-54
+activity#com.appchamasupermecados.MainActivity
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:21:7-30:18
+	android:label
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:23:9-41
+	android:windowSoftInputMode
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:25:9-51
+	android:configChanges
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:24:9-79
+	android:name
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:22:9-61
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:26:9-29:25
+action#android.intent.action.MAIN
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:27:13-65
+	android:name
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:27:21-62
+category#android.intent.category.LAUNCHER
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:28:13-73
+	android:name
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:28:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:31:7-84
+	android:name
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:31:17-81
+uses-sdk
+INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-vector-icons] E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\6001acec48e9430e7f43fdafeed831f4\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\6001acec48e9430e7f43fdafeed831f4\AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.react:react-native:0.57.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\react-native-0.57.0.aar\6af838b26a56a1b3d975a2a4bbf01ad0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\react-native-0.57.0.aar\6af838b26a56a1b3d975a2a4bbf01ad0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\ee1dae3791697d1b73d9f62009b49aa4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\ee1dae3791697d1b73d9f62009b49aa4\AndroidManifest.xml:20:5-44
+MERGED from [:react-native-maps] E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\node_modules\react-native-maps\lib\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-maps] E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\node_modules\react-native-maps\lib\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\340a745ad65bf66d5d3467f920e4fb99\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\340a745ad65bf66d5d3467f920e4fb99\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\ca991d35f9e361b35053db727295f501\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\ca991d35f9e361b35053db727295f501\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\a67947fc75f29e510d49a871857155e8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\a67947fc75f29e510d49a871857155e8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\f948a39efd7d190f0f25c31492c5d33e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\f948a39efd7d190f0f25c31492c5d33e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\f8f57f71f20d045491d9e1be3d1c077b\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\f8f57f71f20d045491d9e1be3d1c077b\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\5308142783a69394252dcc796f5aec40\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\5308142783a69394252dcc796f5aec40\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\90925e7b2caa82d5cae847f4651a8114\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\90925e7b2caa82d5cae847f4651a8114\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\cd3aa5e9e5333f38290db5b599d37760\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\cd3aa5e9e5333f38290db5b599d37760\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\1558d76b5ae72c6f9287341f77a465f0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\1558d76b5ae72c6f9287341f77a465f0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\e897def423c11375628d85096b7f9080\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\e897def423c11375628d85096b7f9080\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\d82939ef291e920122edca0e57fd4bb4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\d82939ef291e920122edca0e57fd4bb4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\e20a60de52257e2730a4323c62dfd90a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\e20a60de52257e2730a4323c62dfd90a\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\61e592dda3bb9a9b0f3fe55014513276\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\61e592dda3bb9a9b0f3fe55014513276\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\d9f52b8d99fb470a2173654893031c03\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\d9f52b8d99fb470a2173654893031c03\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\69f4cb8bf9516c4310f71311363df51e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\69f4cb8bf9516c4310f71311363df51e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\02b900717ab37a9531238e30142a8a1e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\02b900717ab37a9531238e30142a8a1e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\95fd36ed610d0e843952803b9cda44d4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\95fd36ed610d0e843952803b9cda44d4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\a955b383e6188a04dd9a5833949e99ce\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\a955b383e6188a04dd9a5833949e99ce\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ba9a1c1b7b0bf63c5919e7ad493f872b\AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ba9a1c1b7b0bf63c5919e7ad493f872b\AndroidManifest.xml:5:5-43
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2eeaf3194842f14d6b55686dda1011d1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2eeaf3194842f14d6b55686dda1011d1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6380223c6f0238757dbde139c18b30e0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6380223c6f0238757dbde139c18b30e0\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\c136592f9d205218ce0e764564619c4d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\c136592f9d205218ce0e764564619c4d\AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cb25b211fd36d2047e18fae84d6b380f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cb25b211fd36d2047e18fae84d6b380f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a5c183df52f45373f7ba55536c8815c6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a5c183df52f45373f7ba55536c8815c6\AndroidManifest.xml:20:5-44
+INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\90925e7b2caa82d5cae847f4651a8114\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\340a745ad65bf66d5d3467f920e4fb99\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\340a745ad65bf66d5d3467f920e4fb99\AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\340a745ad65bf66d5d3467f920e4fb99\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\340a745ad65bf66d5d3467f920e4fb99\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\340a745ad65bf66d5d3467f920e4fb99\AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\ca991d35f9e361b35053db727295f501\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\ca991d35f9e361b35053db727295f501\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\ca991d35f9e361b35053db727295f501\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\ca991d35f9e361b35053db727295f501\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\5308142783a69394252dcc796f5aec40\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ba9a1c1b7b0bf63c5919e7ad493f872b\AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ba9a1c1b7b0bf63c5919e7ad493f872b\AndroidManifest.xml:8:9-10:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\5308142783a69394252dcc796f5aec40\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\5308142783a69394252dcc796f5aec40\AndroidManifest.xml:24:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\90925e7b2caa82d5cae847f4651a8114\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\cd3aa5e9e5333f38290db5b599d37760\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\cd3aa5e9e5333f38290db5b599d37760\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\90925e7b2caa82d5cae847f4651a8114\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\danilo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\90925e7b2caa82d5cae847f4651a8114\AndroidManifest.xml:27:13-51
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from E:\SistemasDesenvolvidos\mobi-lanches\Chama Supermecados\android\app\src\main\AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

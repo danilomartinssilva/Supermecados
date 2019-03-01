@@ -111,7 +111,7 @@ export default class HomeTab extends Component {
     }
   
   render() {   
-    console.log(this.state);
+    
     
     return (
       <Container  style={{ backgroundColor:"#16B76C"}}>

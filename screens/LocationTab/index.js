@@ -8,21 +8,21 @@ import places from './locations';
 export default class LocationTab extends Component {
   static navigationOptions = {
     tabBarIcon:<MaterialIcons name="location-on" style={{color:'#fff'}}  size={24} />,    
-    title:'Lojas' ,
-    
+    title:'Lojas' ,    
   }
  
   state= {
     places:[
       {
-        "id": 0,
-        "title": "",
-        "description": "",
-        "cep": "",
-        "telefone": "",
+        "id": null,
+        "title": null,
+        "description": null,
+        "cep": null,
+        "telefone": null,
+        "fax": null,
         "latitude": 0,
         "longitude": 0,
-        "imagem": "0"
+        "imagem": null
       }
     ]
   }
@@ -70,8 +70,8 @@ export default class LocationTab extends Component {
     return this.requestPermission().then(ok=>{
       return new Promise((resolve,reject)=>{
 
-        const options = Platform.OS==='android'  ? {enableHighAccuracy: true, timeout: 10000,maximumAge:0}
-                                                : {enableHighAccuracy: true, timeout: 10000,maximumAge:0};
+        const options = Platform.OS==='android'  ? {enableHighAccuracy: false, timeout: 10000,maximumAge:0}
+                                                : {enableHighAccuracy: true, timeout: 10000,maximumAge:2000};
                                                 global.navigator.geolocation.getCurrentPosition(resolve, reject, options);
       })
     })
@@ -85,7 +85,7 @@ export default class LocationTab extends Component {
 
   render() {
     
-    const { latitude, longitude } = this.state.places[0] || '';
+    const { latitude, longitude } = this.state.places[0];
     return (
       <View style={styles.container}>
         <MapView
@@ -105,6 +105,7 @@ export default class LocationTab extends Component {
           onMapReady={this._mapReady}
           loadingEnabled={true}
           showsMyLocationButton={true}          
+          
         >
           { this.state.places.map(place => (
             <MapView.Marker

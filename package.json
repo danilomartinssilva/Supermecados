@@ -17,6 +17,7 @@
     "react": "16.5.0",
     "react-native": "0.57.0",
     "react-native-double-click": "^1.0.5",
+    "react-native-geolocation-service": "^1.1.0",
     "react-native-image-pan-zoom": "^2.1.9",
     "react-native-maps": "^0.21.0",
     "react-native-swiper": "^1.5.13",

@@ -64,7 +64,7 @@ const Slider = ({capas}) =>{
   const imagesVet= capas.map((r)=>{
     return r.imagem;
   })
-  console.log(imagesVet);
+  
    
   return(
     <View style={styles.container}>    
