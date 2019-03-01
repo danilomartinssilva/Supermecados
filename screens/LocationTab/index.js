@@ -9,6 +9,7 @@ export default class LocationTab extends Component {
   static navigationOptions = {
     tabBarIcon:<MaterialIcons name="location-on" style={{color:'#fff'}}  size={24} />,    
     title:'Lojas' ,    
+    
   }
  
   state= {
@@ -45,7 +46,7 @@ export default class LocationTab extends Component {
       })
 
   }
-  async componentDidMount(){
+   componentDidMount(){
   /* await  navigator.geolocation.getCurrentPosition(
       (initialPosition) => {  
         console.log("Posicao inicial",initialPosition) ;     
@@ -79,7 +80,7 @@ export default class LocationTab extends Component {
 
   _mapReady = () => {
     
-      this.state.places[0].mark.showCallout();
+      this.state.places[0].mark.showCallout(); 
     
   };
 
@@ -126,8 +127,9 @@ export default class LocationTab extends Component {
           pagingEnabled
           showsHorizontalScrollIndicator={false}
           onMomentumScrollEnd={(e) => {
-            const place = (e.nativeEvent.contentOffset.x > 0)
-              ? e.nativeEvent.contentOffset.x / Dimensions.get('window').width
+            const scrolled  = e.nativeEvent.contentOffset.x;
+            const place = (scrolled > 0)
+              ? Math.round(scrolled / Dimensions.get('window').width)
               : 0;
 
             const { latitude, longitude, mark } = this.state.places[place];

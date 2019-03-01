@@ -1,7 +1,7 @@
-#Wed Sep 26 21:42:50 BRT 2018
-base.0=E\:\\SistemasDesenvolvidos\\mobi-lanches\\Chama Supermecados\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Fri Mar 01 09:25:22 BRT 2019
+base.0=D\:\\DEV\\GrupoChama\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.1=classes2.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=E\:\\SistemasDesenvolvidos\\mobi-lanches\\Chama Supermecados\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+base.1=D\:\\DEV\\GrupoChama\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0

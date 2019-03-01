@@ -15,6 +15,7 @@ import ReceitasTab from './screens/ReceitasTab';
 
 
 import LocationTab from './screens/LocationTab';
+import ComprasTab from './screens/ComprasTab';
 
 /*
 export default StackNavigator ({
@@ -25,16 +26,17 @@ export default StackNavigator ({
 const Tabs = createBottomTabNavigator({
   HomeTab:HomeTab,
   OfersTab:OfersTab  ,  
-  ReceitasTab:ReceitasTab,
-  /* OrderTab:OrderTab, */
+  ReceitasTab:ReceitasTab,  
   ListasTab:ListasTab,
   LocationTab:LocationTab,  
+  ComprasTab:ComprasTab,  
 
 },{
   initialRouteName:'HomeTab',
   tabBarOptions:{
     showLabel:true,
     showIcon:true,  
+    activeTintColor: '#696969',
     labelStyle:{
       fontSize:12,
       color:'#fff',

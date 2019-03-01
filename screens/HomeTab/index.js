@@ -12,7 +12,7 @@ import {listAll} from '../../store/api_capa';
 
 
 
-const loading = require('../../../Chama Supermecados/assets/loading.gif');
+/* const loading = require('../../../Chama Supermecados/assets/loading.gif'); */
 export default class HomeTab extends Component {
 
   state = {
@@ -137,7 +137,7 @@ export default class HomeTab extends Component {
               <Slider capas = {this.state.capas}/>              
               : 
               <View style={styles.loadingView}>
-                <Image style={styles.loadingImage} source={loading} />
+                {/* <Image style={styles.loadingImage} source={loading} /> */}
               </View>
               }
             </CardItem>            
@@ -150,7 +150,7 @@ export default class HomeTab extends Component {
   
             )) :
           <View style={styles.loadingView}>
-                <Image style={styles.loadingImage} source={loading} />
+                {/* <Image style={styles.loadingImage} source={loading} /> */}
            </View>
           }
         </Content>            
