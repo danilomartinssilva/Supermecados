@@ -1,4 +1,4 @@
-/** @format */
+
 
 import {AppRegistry} from 'react-native';
 // import MainScreen from './screens/MainScreen'; 
