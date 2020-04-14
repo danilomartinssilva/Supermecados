@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\DEV\\GrupoChama\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
+            "outputFile": "D:\\DEV\\SupermecadoChama2\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\3f472449c4da2536c3fa5bba63c71598\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\7f2830821fd4972998d3ced9cea7cac5\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

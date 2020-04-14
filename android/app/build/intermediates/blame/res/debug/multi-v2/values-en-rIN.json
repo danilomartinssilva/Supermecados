@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\DEV\\GrupoChama\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
+            "outputFile": "D:\\DEV\\SupermecadoChama2\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\3f472449c4da2536c3fa5bba63c71598\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,209,309,417,501,601,716,793,869,951,1054,1158,1257,1362,1465,1569,1725,1825",
-                        "endColumns": "103,99,107,83,99,114,76,75,81,102,103,98,104,102,103,155,99,81",
-                        "endOffsets": "204,304,412,496,596,711,788,864,946,1049,1153,1252,1357,1460,1564,1720,1820,1902"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\d69e8c5163510ccdbc1ed0d767a5a286\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\7dbdc97f5e70172ed0f56e71dada0d43\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,6 +18,16 @@
                         "startOffsets": "1907",
                         "endColumns": "100",
                         "endOffsets": "2003"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\7f2830821fd4972998d3ced9cea7cac5\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,209,309,417,501,601,716,793,869,951,1054,1158,1257,1362,1465,1569,1725,1825",
+                        "endColumns": "103,99,107,83,99,114,76,75,81,102,103,98,104,102,103,155,99,81",
+                        "endOffsets": "204,304,412,496,596,711,788,864,946,1049,1153,1252,1357,1460,1564,1720,1820,1902"
                     }
                 }
             ]

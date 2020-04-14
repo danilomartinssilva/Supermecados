@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\DEV\\GrupoChama\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
+            "outputFile": "D:\\DEV\\SupermecadoChama2\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\3f472449c4da2536c3fa5bba63c71598\\res\\values-ko\\values-ko.xml",
+                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\7f2830821fd4972998d3ced9cea7cac5\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\27c4d4e0996d7c332072b7612c206d7d\\res\\values-ko\\values.xml",
+                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\7dbdc97f5e70172ed0f56e71dada0d43\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "4260",
+                        "endColumns": "100",
+                        "endOffsets": "4356"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d2344c60e7f373443a251cdc9c4b8221\\res\\values-ko\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\baccb6a4ed26a534c8f3c374a186fe82\\res\\values-ko\\values.xml",
+                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\f39a894cd9be994fa1135f0555b91235\\res\\values-ko\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -52,23 +69,6 @@
                         "startOffsets": "2799",
                         "endColumns": "179",
                         "endOffsets": "2974"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Danilo\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\d69e8c5163510ccdbc1ed0d767a5a286\\res\\values-ko\\values-ko.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "38",
-                        "startColumns": "4",
-                        "startOffsets": "4260",
-                        "endColumns": "100",
-                        "endOffsets": "4356"
                     }
                 }
             ]
