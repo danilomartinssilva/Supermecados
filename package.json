@@ -9,7 +9,7 @@
   "dependencies": {
     "fast-xml-parser": "^3.12.5",
     "geolib": "^2.0.24",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "metro-core": "^0.59.0",
     "native-base": "^2.8.0",
     "pouchdb-adapter-asyncstorage": "^6.4.1",
